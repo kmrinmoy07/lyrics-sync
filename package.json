@@ -1,0 +1,29 @@
+{
+  "name": "baahi-sync",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "yarn@1.22.22",
+  "engines": {
+    "node": "24.x"
+  },
+  "scripts": {
+    "dev": "node scripts/import-songs.mjs && next dev",
+    "build": "node scripts/import-songs.mjs && next build",
+    "start": "next start",
+    "import:songs": "node scripts/import-songs.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "hls.js": "1.6.16",
+    "next": "16.2.12",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "xlsx": "0.18.5"
+  },
+  "devDependencies": {
+    "@types/node": "26.1.2",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.4",
+    "typescript": "5.9.3"
+  }
+}
