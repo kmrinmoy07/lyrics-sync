@@ -819,7 +819,8 @@ input[type="range"]::-moz-range-thumb { background: var(--accent); border: 2px s
   .volume-control { display: none; }
   .player-controls { grid-template-columns: 116px 1fr; }
   .timeline { grid-column: 1 / -1; }
-  .play-button { height: 47px; width: 47px; }
+  .play-button { height: 40px; margin-left: 1px; margin-right: 1px; width: 40px; }
+  .play-button svg { height: 21px; width: 21px; }
   .lyrics-titlebar { padding: 17px 18px 6px; }
   .lyrics-scroll,
   .plain-lyrics { padding-left: 27px; padding-right: 27px; }
