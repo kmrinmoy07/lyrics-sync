@@ -67,29 +67,12 @@ button {
 }
 
 .brand-mark {
-  align-items: center;
-  background: var(--accent);
-  border-radius: 12px;
-  display: flex;
-  height: 38px;
-  justify-content: center;
+  border-radius: 11px;
+  height: 44px;
   margin-right: 12px;
-  transform: rotate(-4deg);
-  width: 38px;
+  object-fit: cover;
+  width: 44px;
 }
-
-.brand-mark::before,
-.brand-mark::after,
-.brand-mark span {
-  border: 2px solid #141711;
-  border-radius: 50%;
-  content: "";
-  position: absolute;
-}
-
-.brand-mark::before { height: 22px; width: 22px; }
-.brand-mark::after { height: 10px; width: 10px; }
-.brand-mark span { background: #141711; border: 0; height: 4px; width: 4px; }
 
 .brand-copy {
   display: flex;
@@ -727,10 +710,9 @@ input[type="range"]::-moz-range-thumb { background: var(--accent); border: 2px s
 
 .vinyl-center {
   align-items: center;
-  background: var(--accent);
-  border: 15px solid #a5c844;
+  background: #e7071b;
+  border: 11px solid #20231e;
   border-radius: 50%;
-  color: #12150f;
   display: flex;
   height: 94px;
   justify-content: center;
@@ -739,6 +721,14 @@ input[type="range"]::-moz-range-thumb { background: var(--accent); border: 2px s
   top: 50%;
   transform: translate(-50%, -50%);
   width: 94px;
+}
+
+.welcome-brand-logo {
+  border-radius: 50%;
+  display: block;
+  height: 72px;
+  object-fit: cover;
+  width: 72px;
 }
 
 .vinyl-groove { border: 1px solid rgba(255,255,255,.08); border-radius: 50%; position: absolute; }

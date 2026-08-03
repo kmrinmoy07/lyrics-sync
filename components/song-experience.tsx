@@ -1,6 +1,7 @@
 "use client";
 
 import type HlsType from "hls.js";
+import Image from "next/image";
 import {
   type CSSProperties,
   type ReactNode,
@@ -347,7 +348,14 @@ export function SongExperience({ songs }: { songs: Song[] }) {
   return (
     <div className="app-shell">
       <header className="topbar">
-        <div className="brand-mark" aria-hidden="true"><span /></div>
+        <Image
+          alt="Baahi"
+          className="brand-mark"
+          height={44}
+          priority
+          src="/baahi-logo.png"
+          width={44}
+        />
         <div className="brand-copy">
           <strong>Baahi Sync</strong>
           <span>Listen between the lines</span>
@@ -559,7 +567,9 @@ export function SongExperience({ songs }: { songs: Song[] }) {
               <div className="vinyl-visual" aria-hidden="true">
                 <span className="vinyl-groove groove-one" />
                 <span className="vinyl-groove groove-two" />
-                <span className="vinyl-center"><MusicIcon size={34} /></span>
+                <span className="vinyl-center">
+                  <Image alt="" className="welcome-brand-logo" height={72} src="/baahi-logo.png" width={72} />
+                </span>
               </div>
               <span className="eyebrow">The words move with you</span>
               <h2>Pick a song.<br />Catch every line.</h2>
